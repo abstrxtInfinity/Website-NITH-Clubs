@@ -1,0 +1,356 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.text {
+  position: absolute;
+  text-transform: uppercase;
+  display: block;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+#text1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 5px;
+  background-color: transparent;
+  position: relative;
+  animation: text 3s 1;
+}
+#text2 {
+  font-size: 28px;
+  color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes text {
+  0% {
+    color: black;
+    margin-bottom: -60px;
+    background-color: black;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -60px;
+    background-color: black;
+  }
+
+  50% {
+    margin-bottom: -60px;
+    background-color: black;
+  }
+  80% {
+    letter-spacing: 6px;
+    margin-bottom: 0px;
+    background-color: transparent;
+  }
+}
+
+canvas {
+  display: block;
+}
+.about {
+  height: 600vh;
+  display: flex;
+  background-color: black;
+}
+.about-title {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  font-size: 25px;
+  margin: 0 !important;
+}
+.about-pages,
+.about-pages2 {
+  width: 50%;
+  padding: 20px;
+}
+
+.about-pages div,
+.about-pages2 div {
+  margin-top: 20px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 4px solid white;
+  border-radius: 30px;
+}
+
+.about-pages div > p {
+  width: 75%;
+  line-height: 25px;
+}
+
+.about2 {
+  height: 500vh;
+  display: flex;
+  background-color: black;
+}
+.about-title2 {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  margin: 0 !important;
+}
+
+.about-pages2 div > p {
+  width: 75%;
+  line-height: 25px;
+}
+
+.about-title h2 {
+  font-size: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 4s steps(9) infinite alternate-reverse, blink 1s infinite;
+}
+.about-title2 h2 {
+  font-size: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 6s steps(17) infinite alternate-reverse, blink 1s infinite;
+}
+@keyframes type {
+  100% {
+    width: 0ch;
+  }
+  0% {
+    width: 10ch;
+  }
+}
+
+@keyframes typing {
+  100% {
+    width: 0ch;
+  }
+  0% {
+    width: 20ch;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid white;
+  }
+}
+
+.about-pages div > h2,
+p,
+.about-pages2 div > h2,
+p {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
+  filter: blur(1px);
+  text-transform: uppercase;
+  font-weight: 520;
+  text-shadow: 0 0 10px #f7005f, 0 0 20px #f7005f, 0 0 80px #f7005f,
+    0 0 160px #f7005f, 0 0 320px #f7005f;
+}
+p {
+  text-align: all;
+  font-size: 15px;
+  filter: blur(0.6px);
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: initial;
+  text-shadow: 0 0 1px #0590fa, 0 0 2px #0590fa, 0 0 8px #0590fa,
+    0 0 16px #0590fa, 0 0 32px #0590fa;
+}
+.btn {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 4px solid;
+  color: #3498db;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  border-radius: 30px;
+}
+.btn a {
+  color: #3498db;
+  text-decoration: none;
+}
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: black;
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+
+.btn::before {
+  top: -4px;
+  left: 10%;
+}
+
+.btn::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.btn:hover::before {
+  left: 80%;
+}
+
+.btn:hover::after {
+  right: 80%;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #000;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+footer ul a {
+  color: white;
+}
+
+footer ul li {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+  background: #000;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: 0 15px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer ul li::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  z-index: -1;
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+footer ul li:hover::before {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+footer ul li:nth-child(1):hover {
+  -webkit-box-shadow: 0 0 15px #4267b2;
+  box-shadow: 0 0 15px #4267b2;
+  text-shadow: 0 0 15px #4267b2;
+}
+
+footer ul li:nth-child(1):hover a {
+  color: #456cba;
+}
+
+footer ul li:nth-child(2):hover {
+  -webkit-box-shadow: 0 0 15px #1da1f2;
+  box-shadow: 0 0 15px #1da1f2;
+  text-shadow: 0 0 15px #1da1f2;
+}
+
+footer ul li:nth-child(2):hover a {
+  color: #26a4f2;
+}
+
+footer ul li:nth-child(3):hover {
+  -webkit-box-shadow: 0 0 15px #e1306c;
+  box-shadow: 0 0 15px #e1306c;
+  text-shadow: 0 0 15px #e1306c;
+}
+
+footer ul li:nth-child(3):hover a {
+  color: #e23670;
+}
+
+footer ul li:nth-child(4):hover {
+  -webkit-box-shadow: 0 0 15px #2867b2;
+  box-shadow: 0 0 15px #2867b2;
+  text-shadow: 0 0 15px #2867b2;
+}
+
+footer ul li:nth-child(4):hover a {
+  color: #2a6cbb;
+}
+
+footer ul li:nth-child(5):hover {
+  -webkit-box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 15px #fff;
+  text-shadow: 0 0 15px #fff;
+}
+
+footer ul li:nth-child(5):hover a {
+  color: #fff;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./csss_sass/preloader.css">
+    <link rel="stylesheet" href="csss_sass/image-galley.css">
+    <link rel="stylesheet" href="csss_sass/nav-bar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body onload="loaded()">
+    <div id="loading"></div>
+      <header>
+    <div class="container">
+            <nav>
+              <ul class="nav-list">
+                  <li>
+                      <a href="./clubs.html">Club</a>
+                  </li>
+                   <li>
+                      <a href="index.html">home</a></li>
+                          <li>
+                              <a href="./Societies.html">Societies</a></li>   
+              </ul>
+              </nav>
+          </div>
+  </header>
+    <div class="gallery-section">
+      <div class="inner-width">
+        <div class="gallery">
+
+          <a href="images/iste1.jpg" class="image">
+            <img src="images/iste1.jpg" alt="">
+          </a>
+          <a href="images/robo3.jpg" class="image">
+            <img src="images/robo3.jpg" alt="">
+          </a>
+          <a href="images/exe4.jpg" class="image">
+            <img src="images/exe4.jpg" alt="">
+          </a>
+          <a href="images/s5.jpg" class="image">
+            <img src="images/s5.jpg" alt="">
+          </a>
+          <a href="images/5.jpg" class="image">
+            <img src="images/5.jpg" alt="">
+          </a>
+          <a href="images/pahal.png" class="image">
+            <img src="images/pahal.png" alt="">
+          </a>
+          <a href="images/6.jpg" class="image">
+            <img src="images/6.jpg" alt="">
+          </a>
+          <a href="images/7.jpg" class="image">
+            <img src="images/7.jpg" alt="">
+          </a>
+          <a href="images/lal2.jpg" class="image">
+            <img src="images/lal2.jpg" alt=""></a>
+
+          <a href="images/8.jpg" class="image">
+            <img src="images/8.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+   <footer>
+        <ul>
+            <li><a href="https://tinyurl.com/y7nnunxe" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/NITHamirpurHP?s=20" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/nit_hamirpur/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/school/national-institute-of-technology-hamirpur" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.nith.ac.in/" target="_blank"><i class="fas fa-info"></i></a></li>
+ 
+        </ul>
+</footer>
+
+<script>
+  var preloader=document.getElementById('loading');
+  function loaded(){
+      
+      preloader.style.display = 'none';
+  }
+  const selectElement = (element) => document.querySelector(element);
+  ;
+  </script>
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+  </body>
+</html>
